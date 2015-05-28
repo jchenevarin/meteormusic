@@ -1,0 +1,52 @@
+<template name="home">
+
+    <main>
+
+
+        <h3 class="thin"> By Artists </h3>
+        <hr>
+
+        <div class="row">
+            {{#each songs}}
+                {{> song}}
+            {{/each}}
+        </div>
+
+        <h3 class="thin"> By Albums </h3>
+        <hr>
+
+        <div class="row">
+            {{#each songs}}
+                {{> song}}
+            {{/each}}
+        </div>
+
+    </main>
+
+</template>
+
+<template name="song">
+
+    <div class="col s1 m1">
+        <div class="card">
+            <div class="card-image">
+                <img src="{{cover}}">
+                <span class="card-title">{{title}}</span>
+            </div>
+            <div class="card-content">
+
+                <audio controls style="width: 100%;">
+                    <source src="{{sound}}" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+
+            </div>
+
+            <div class="card-action">
+                <a href="#">{{album}}</a><br>
+                <a href="#">{{artist}}</a>
+            </div>
+        </div>
+    </div>
+
+</template>

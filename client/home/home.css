@@ -1,0 +1,8 @@
+.card .card-content {
+  padding: 5px; }
+.card .card-image .card-title {
+  padding: 5px;
+  font-size: 14px; }
+.card .card-action {
+  padding: 5px;
+  font-size: 12px; }
